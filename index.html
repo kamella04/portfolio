@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Kamella Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddaddecf93.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <div class="layer-open"></div>
+        </nav>
+        <div class="header-text">
+            <p>Data Science/ Data Analyst</p>
+            <h1>Hi, I'm <span>Kamella</span> Hoang</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"></div>
+                <img src="images/portfolio_image_2.jpeg" class="portfolio-image-2">
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <br/>
+                <p>Hi, I'm Kamella Hoang! I'm diving into the world of Data Science and Analytics, combining my love for problem-solving with the power of data. With a 4.0 GPA and a passion for learning, I'm working towards uncovering insights that can truly make a difference.
+                    I'm particularly drawn to predictive analytics, data visualization, and exploring how we can keep data secure in a rapidly changing world. Whether it's working on a project or just getting lost in a challenging dataset, I love the process of turning numbers into stories and solutions.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language</span><br>Python, R</li>
+                            <li><span>Data Management</span><br>MongoDB, OracleSQL, Neo4J, DynamoDB, Databricks</li>
+                            <li><span>Data Visualization</span><br>PowerBI, Metabase, Tableau</li>
+                            <li><span>Business Applications</span><br>Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>07/2024 - Current</span><br>FOH Captain at Pho Vinh</li>
+                            <li><span>12/2025 - 01/2025</span><br>Team Member/Co-host at Seneca Vietnam Lunar New Year 2025 Volunteer</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>01/2023 - Current</span><br>GPA: 4.0 <br/>Honours Bachelor of Data Science & Analytics at Seneca Polytechnic</li>
+                        </ul>
+                    </div>
+        </div>
+        </div>
+    </div>
+
+<!-------------services----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Predictive Analytics</h2>
+                <p>Unlock the power of data to anticipate trends and outcomes. With a strong foundation in predictive modeling and machine learning, I can create solutions that help businesses make data-driven decisions with confidence.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Data Visualization</h2>
+                <p>Transform complex data into clear, insightful visual stories. Using tools like Tableau and Python libraries, I design visuals that uncover patterns, trends, and actionable insights for various audiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code-branch"></i>
+                <h2>Data Simulation</h2>
+                <p>Simulate real-world scenarios to gain deeper insights into systems and processes. Through advanced statistical techniques, I can model and analyze dynamic environments to optimize outcomes and strategies.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- ---------------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Traffic Efficiency</h3>
+                    <p>Compare whether late merge or early merge is more effective with increasing volume of traffic on highway using discrete time paradigm with agents.</p>
+                    <a href="https://github.com/kamella04/Traffic-Efficiency"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpeg">
+                <div class="layer">
+                    <h3>Survival Machine Learning Model</h3>
+                    <p>Training and testing the machine learning models to find the best models to predict the patient's survival status, whether the patient survived 5 years or longer or died within 5 years.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg">
+                <div class="layer">
+                    <h3>Local Sales Restaurant</h3>
+                    <p>Analyze the sales over a year of the restaurant, create dashboards, build time series machine learning models, and propose recommendations.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.jpeg">
+                <div class="layer">
+                    <h3>Norcan Employee Insight</h3>
+                    <p>Analyze the company's workforce management, create dashboards, suggest practical recommendations improved hiring and onboarding.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- 
+--------------------contact------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title-contact">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i></i>kamhoang04@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(+1) 437-557-1909</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100009569983984"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/__bkhanhh/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kamella-hoang/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i>   Copyright by Kevin.</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz_YrQ8ad3LA7AphXYI1Ru7udC7u3454HwOEfbml-UQAPvUlWnhNxKXaNzUk6E8yWyiBA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
