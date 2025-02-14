@@ -92,6 +92,7 @@ nav ul li a:hover::after {
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 2.5rem;
 }
 
 .about-col-2{
@@ -353,6 +354,19 @@ nav .fas{
     display: none;
 
 }
+@media (max-width: 660px) { 
+    .contact-left{
+        flex-basis: unset;
+    }
+    .contact-right{
+        flex-basis: unset;
+    }
+    .submit-btn{
+        margin: auto;
+        display: block !important;
+    }
+}
+
 @media screen and (max-width: 600px){
     #header{
         background-image: url(images/phone-background.png);
